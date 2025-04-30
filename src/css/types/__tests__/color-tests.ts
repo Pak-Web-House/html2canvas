@@ -1,7 +1,8 @@
-import {strictEqual} from 'assert';
-import {asString, color, isTransparent, pack} from '../color';
-import {Parser} from '../../syntax/parser';
-import {Context} from '../../../core/context';
+import { strictEqual } from 'assert';
+import { asString, color, isTransparent } from '../color';
+import { Parser } from '../../syntax/parser';
+import { Context } from '../../../core/context';
+import { pack } from '../color-utilities'
 
 const parse = (value: string) => color.parse({} as Context, Parser.parseValue(value));
 
